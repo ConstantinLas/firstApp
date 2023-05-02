@@ -24,9 +24,9 @@ let personalMovieDB = {
 
     function testForStart () {
         personalMovieDB.count = 2;
-        const a = "bla bla bla", b = "hei hei hei";
-        personalMovieDB.movies[a] =  5;
-        personalMovieDB.movies[b] =  3;
+        // const a = "bla bla bla", b = "hei hei hei";
+        // personalMovieDB.movies[a] =  5;
+        // personalMovieDB.movies[b] =  3;
     }
     
     testForStart ();
@@ -35,8 +35,8 @@ let personalMovieDB = {
 function rememberMyFilms() {
 
     for (let i = 0; i < 2; i++) {
-        const   a = prompt("Один из последних просмотренных фильмов?", ""),
-                b = prompt("На сколько оцените его оцениваете?", "");
+        const   a = prompt("Один из последних просмотренных фильмов?", "").trim(),
+                b = prompt("На сколько оцените его оцениваете?", "").trim();
     
         
         if (a != null && a != "" && b != null && b != "" && a.length > 5){
@@ -50,7 +50,7 @@ function rememberMyFilms() {
     
 }
 
-// rememberMyFilms();
+rememberMyFilms();
 
 
 function detectPersonalLavel() {
